@@ -18,3 +18,5 @@ fields:
   description: ''
   config:
     required: true
+pages:
+- src/posts/this-is-my-second-post.md
