@@ -2,6 +2,17 @@
 label: Post
 hide_body: false
 fields:
+  - name: title
+    type: text
+    label: Title
+    description: ""
+    config:
+      required: true
+  - name: path
+    type: text
+    label: URL
+    config:
+      required: true
   - name: date
     type: datetime
     label: Date
@@ -12,9 +23,3 @@ fields:
       time_format:
       display_utc: false
     default: now
-  - name: title
-    type: text
-    label: Title
-    description: ""
-    config:
-      required: true
