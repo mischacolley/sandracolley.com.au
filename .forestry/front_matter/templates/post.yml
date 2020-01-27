@@ -24,4 +24,5 @@ fields:
     display_utc: false
   default: now
 pages:
+- src/posts/my-third-blog-post.md
 - src/posts/this-is-my-second-post.md
