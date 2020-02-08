@@ -32,8 +32,8 @@ class Homepage extends React.Component {
             </header>
             <p>I live with my beautiful family in the Byron Shire of northern NSW, Australia.</p>
             <ul className="actions">
-              <li><a href="#" className="button">About me</a></li>
-              <li><a href="#" className="button">doula.sandra</a></li>
+              <li><Link to="/about" className="button">About me</Link></li>
+              <li><Link to="/doula" className="button">doula.sandra</Link></li>
             </ul>
           </section>
 
