@@ -20,3 +20,5 @@ fields:
   type: tag_list
   default: []
   label: Tag
+pages:
+- src/testimonials/Test Doula Testimonial.md
