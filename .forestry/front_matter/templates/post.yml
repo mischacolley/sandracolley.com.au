@@ -33,4 +33,5 @@ fields:
   default: post
 pages:
 - src/posts/my-third-blog-post.md
+- src/posts/test-hidden-filed.md
 - src/posts/this-is-my-second-post.md
