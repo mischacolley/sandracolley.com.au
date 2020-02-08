@@ -39,31 +39,15 @@ class Doula extends React.Component {
             <h2>What my clients say</h2>
 
             <ul>
-              <li>
-                <article>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </article>
-                <article>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </article>
-                <article>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </article>
-              </li>
+              {testimonials.map(({ node }) => {
+                return (
+                  <article key={node.frontmatter.path}>
+                    <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                    <strong>{node.frontmatter.name}</strong>
+                  </article>
+                )
+              })}
             </ul>
-
-            {testimonials.map(({ node }) => {
-              const title = get(node, 'frontmatter.title') || node.frontmatter.path
-              return (
-                <div key={node.frontmatter.path}>
-                  <h3>
-                    <Link to={node.frontmatter.path}>{title}</Link>
-                  </h3>
-                  <small>{node.frontmatter.date}</small>
-                  <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                </div>
-              )
-            })}
 
           </section>
 
@@ -103,12 +87,6 @@ export default Doula
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
     allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {tag: {eq: "doula"}}}) {
       edges {
         node {
