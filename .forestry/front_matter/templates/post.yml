@@ -23,6 +23,14 @@ fields:
     time_format: 
     display_utc: false
   default: now
+- name: type
+  type: text
+  config:
+    required: false
+  hidden: true
+  label: Type
+  description: Hidden filed to identify posts
+  default: post
 pages:
 - src/posts/my-third-blog-post.md
 - src/posts/this-is-my-second-post.md
