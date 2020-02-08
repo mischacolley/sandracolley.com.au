@@ -1,4 +1,18 @@
 ---
-label: 
+label: testimonial
 hide_body: false
-fields: []
+fields:
+- name: testimonial
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Testimonial
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
