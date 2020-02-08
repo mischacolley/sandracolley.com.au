@@ -12,8 +12,8 @@ import { Link, graphql } from 'gatsby'
 class Doula extends React.Component {
   render() {
 
-    const siteTitle = "Doula"
-    const siteDescription = "Doula Description"
+    const pageTitle = "Doula Sandra - Birthworker for your pregnancy, birth & postpartum journey"
+    const pageDescription = "As a doula I am your personal, non medical birth support servicing all areas in the Byron shire as well as Lennox Head, Lismore, Murwillumbah, Ballina, Tweed Heads & the Gold Coast."
 
     const testimonials = get(this, 'props.data.allMarkdownRemark.edges')
     const instagram = get(this, 'props.data.allInstaNode.edges')
@@ -21,8 +21,11 @@ class Doula extends React.Component {
     return (
       <Layout>
         <Helmet>
-          <title>{siteTitle}</title>
-          <meta name="description" content={siteDescription} />
+          <title>{pageTitle}</title>
+          <meta property="og:title" content={pageTitle} />
+          <meta name="description" content={pageDescription} />
+          <meta property="og:description" content={pageDescription} />
+          {/* <meta property="og:image" content={ogImg} /> */}
         </Helmet>
 
         <div id="main">
@@ -99,7 +102,7 @@ class Doula extends React.Component {
 
 export default Doula
 
-export const pageQuery = graphql`
+export conpageQuery = graphql`
   query {
     allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {tag: {eq: "doula"}}}) {
       edges {

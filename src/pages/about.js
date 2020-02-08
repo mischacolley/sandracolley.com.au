@@ -10,14 +10,17 @@ import Layout from '../components/layout'
 class About extends React.Component {
   render() {
 
-    const siteTitle = "About"
-    const siteDescription = "About Description"
+    const pageTitle = "About Sandra Colley - Mother | Doula | Early Childhood Teacher | Friend | Partner | Sister"
+    const pageDescription = "I’m Sandra! I am a mother, doula, early childhood teacher, friend, partner and sister. I live with my beautiful family in the Byron Shire of northern NSW, Australia."
 
     return (
       <Layout>
         <Helmet>
-          <title>{siteTitle}</title>
-          <meta name="description" content={siteDescription} />
+          <title>{pageTitle}</title>
+          <meta property="og:title" content={pageTitle} />
+          <meta name="description" content={pageDescription} />
+          <meta property="og:description" content={pageDescription} />
+          {/* <meta property="og:image" content={ogImg} /> */}
         </Helmet>
 
         <div id="main">
