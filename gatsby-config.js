@@ -19,6 +19,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `doula.sandra`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
@@ -27,6 +33,8 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`
   ],
 }
