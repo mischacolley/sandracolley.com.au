@@ -11,8 +11,8 @@ import { Link, graphql } from 'gatsby'
 class Homepage extends React.Component {
   render() {
 
-    const siteTitle = "Gatsby Starter - Strata"
-    const siteDescription = "Site description"
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const siteDescription = get(this, 'props.data.site.siteMetadata.description')
 
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
     const instagram = get(this, 'props.data.allInstaNode.edges')

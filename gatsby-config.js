@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Sandra Colley",
     author: "Sandra Colley",
-    description: "A Gatsby.js Starter based on Strata by HTML5 UP"
+    description: "I’m Sandra! I am a mother, doula, early childhood teacher, friend, partner and sister"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
