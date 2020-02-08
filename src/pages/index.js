@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 import get from 'lodash/get'
 
 import { Link, graphql } from 'gatsby'
@@ -15,7 +15,6 @@ class Homepage extends React.Component {
     const siteDescription = get(this, 'props.data.site.siteMetadata.description')
 
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
-    const instagram = get(this, 'props.data.allInstaNode.edges')
 
     return (
       <Layout>
@@ -30,11 +29,16 @@ class Homepage extends React.Component {
             <header className="major">
               <h2>I’m Sandra! I am a mother, doula, early childhood teacher, friend, partner and sister. </h2>
             </header>
-            <p>I live with my beautiful family in the Byron Shire of northern NSW, Australia.</p>
+            <p>I live with my beautiful family in the Byron Shire of Northern NSW, Australia.</p>
+
+            <p>I am a devoted mum of two beautiful children who taught me how to truly love and be loved unconditionally. After having a fulfilling career as an early childhood teacher I have finally devoted myself to my dream of being a Doula.</p>
+
             <ul className="actions">
-              <li><Link to="/about" className="button">About me</Link></li>
-              <li><Link to="/doula" className="button">doula.sandra</Link></li>
+              <li><Link to="/doula" className="button">Hear about Doula.Sandra</Link></li>
             </ul>
+
+            <p>Cooking ... craft. Unschooling.</p>
+
           </section>
 
           <section >
@@ -59,29 +63,6 @@ class Homepage extends React.Component {
               </li>
             </ul>
               
-          </section>
-
-          <section id="two">
-            <h2>Latest Images</h2>
-
-            <ul className="latest-posts">
-              {instagram.map(({ node }) => {
-                return (
-                  <li>
-                    <a href={"https://www.instagram.com/p/" + node.id} target="_blank" rel="noopener noreferrer">
-                      <Img fluid={node.localFile.childImageSharp.fluid} />
-                    </a>
-                  </li>
-                )
-              })}
-            </ul>
-
-            <ul className="actions">
-              <li>
-                <a href="https://www.instagram.com/doula.sandra/" className="icon fa-instagram button" target="_blank"><span className="label">Instagram</span> See More</a>
-              </li>
-            </ul>
-
           </section>
 
           <section id="three">
@@ -147,40 +128,6 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             title
-          }
-        }
-      }
-    }
-    allInstaNode(
-      sort: { fields: timestamp, order: DESC }
-      limit: 6
-      ) {
-      edges {
-        node {
-          id
-          likes
-          comments
-          mediaType
-          preview
-          original
-          timestamp
-          caption
-          localFile {
-            childImageSharp {
-              fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
-            }
-          }
-          # Only available with the public api scraper
-          thumbnails {
-            src
-            config_width
-            config_height
-          }
-          dimensions {
-            height
-            width
           }
         }
       }
