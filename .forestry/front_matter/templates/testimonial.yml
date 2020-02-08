@@ -1,16 +1,7 @@
 ---
-label: testimonial
+label: Testimonial
 hide_body: false
 fields:
-- name: testimonial
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Testimonial
 - name: name
   type: text
   config:
