@@ -1,0 +1,8 @@
+---
+tag:
+- doula
+name: John Smith
+path: my-second-post
+
+---
+This is a test 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
