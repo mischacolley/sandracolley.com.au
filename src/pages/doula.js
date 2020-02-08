@@ -5,6 +5,8 @@ import Layout from '../components/layout'
 
 // import Img from "gatsby-image"
 
+import get from 'lodash/get'
+
 import { Link, graphql } from 'gatsby'
 
 class Doula extends React.Component {
@@ -12,6 +14,9 @@ class Doula extends React.Component {
 
     const siteTitle = "Doula"
     const siteDescription = "Doula Description"
+
+    const testimonials = get(this, 'props.data.allMarkdownRemark.edges')
+    const instagram = get(this, 'props.data.allInstaNode.edges')
 
     return (
       <Layout>
@@ -46,6 +51,19 @@ class Doula extends React.Component {
                 </article>
               </li>
             </ul>
+
+            {testimonials.map(({ node }) => {
+              const title = get(node, 'frontmatter.title') || node.frontmatter.path
+              return (
+                <div key={node.frontmatter.path}>
+                  <h3>
+                    <Link to={node.frontmatter.path}>{title}</Link>
+                  </h3>
+                  <small>{node.frontmatter.date}</small>
+                  <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                </div>
+              )
+            })}
 
           </section>
 
@@ -82,3 +100,61 @@ class Doula extends React.Component {
 }
 
 export default Doula
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {tag: {eq: "doula"}}}) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+          }
+        }
+      }
+    }
+    allInstaNode(
+      sort: { fields: timestamp, order: DESC }
+      limit: 3
+      ) {
+      edges {
+        node {
+          id
+          likes
+          comments
+          mediaType
+          preview
+          original
+          timestamp
+          caption
+          localFile {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+          # Only available with the public api scraper
+          thumbnails {
+            src
+            config_width
+            config_height
+          }
+          dimensions {
+            height
+            width
+          }
+        }
+      }
+    }
+  }
+`

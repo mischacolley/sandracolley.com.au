@@ -7,6 +7,11 @@ fields:
   config:
     required: false
   label: Name
+- name: path
+  type: text
+  label: URL
+  config:
+    required: true
 - name: tag
   type: tag_list
   default: []
