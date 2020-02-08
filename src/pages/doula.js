@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 
-// import Img from "gatsby-image"
+import Img from "gatsby-image"
 
 import get from 'lodash/get'
 
@@ -49,6 +49,20 @@ class Doula extends React.Component {
               })}
             </ul>
 
+          </section>
+
+          <section>
+            <ul className="latest-posts">
+              {instagram.map(({ node }) => {
+                return (
+                  <li>
+                    <a href={"https://www.instagram.com/p/" + node.id} target="_blank" rel="noopener noreferrer">
+                      <Img fluid={node.localFile.childImageSharp.fluid} />
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
           </section>
 
           <section>
@@ -102,7 +116,7 @@ export const pageQuery = graphql`
     }
     allInstaNode(
       sort: { fields: timestamp, order: DESC }
-      limit: 3
+      limit: 6
       ) {
       edges {
         node {
