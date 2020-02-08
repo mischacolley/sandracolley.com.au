@@ -16,6 +16,14 @@ fields:
   type: tag_list
   default: []
   label: Tag
+- name: type
+  type: text
+  config:
+    required: false
+  hidden: true
+  label: Type
+  description: Hidden filed to identify testimonials
+  default: testimonial
 pages:
 - src/testimonials/Test Doula Testimonial.md
 - src/testimonials/Test Doula Testimonial2.md
