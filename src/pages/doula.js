@@ -102,7 +102,7 @@ class Doula extends React.Component {
 
 export default Doula
 
-export conpageQuery = graphql`
+export const pageQuery = graphql`
   query {
     allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {tag: {eq: "doula"}}}) {
       edges {
