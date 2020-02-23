@@ -2,7 +2,7 @@
 tag:
 - doula
 name: Amanda Aitchison
-path: "/amanda-aitchison"
+path: amanda-aitchison
 type: testimonial
 
 ---
