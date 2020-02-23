@@ -12,7 +12,7 @@ class Header extends React.Component {
           <Link to="/" className="image avatar">
             <img src={avatar} alt="Face of Sandra Colley"/>
           </Link>
-          <h1><strong>I'm Sandra.</strong> Mother.<br />
+          <h1><strong>I'm Doula.Sandra.</strong><br />
           Doula. Early Childhood Teacher. <br />
           Friend. Partner. Sister.</h1>
         </div>

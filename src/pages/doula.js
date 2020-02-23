@@ -89,9 +89,47 @@ class Doula extends React.Component {
 
             <h3>Why do I need a Doula?</h3>
 
-            <p><a href="https://www.ncbi.nlm.nih.gov/m/pubmed/23076901/?fbclid=IwAR23D9YAVziONYEudiQR2LKvfZ4ZaCCk5P_FhxDM7JpZ7qazctxw1YsiHg8" target="_blank">Studies show</a> that in 95% of births doulas lead to a shorter labour, more spontaneous vaginal birth (lower chances of induction), less cesareans and instrumental births, fewer pain medication and epidural, less babies with a low 5min. Apgar score and overall more satisfaction with the birth experience.</p>
+            <p><a href="https://www.ncbi.nlm.nih.gov/m/pubmed/23076901/?fbclid=IwAR23D9YAVziONYEudiQR2LKvfZ4ZaCCk5P_FhxDM7JpZ7qazctxw1YsiHg8" target="_blank" rel="noopener noreferrer">Studies show</a> that in 95% of births doulas lead to a shorter labour, more spontaneous vaginal birth (lower chances of induction), less cesareans and instrumental births, fewer pain medication and epidural, less babies with a low 5min. Apgar score and overall more satisfaction with the birth experience.</p>
 
           </section>
+
+          <section id="three">
+            <h2 id="contact">Get In Touch</h2>
+            <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+            <div className="row">
+              <div className="8u 12u$(small)">
+                <form method="post" action="#">
+                  <div className="row uniform 50%">
+                    <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                    <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+                    <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                  </div>
+                </form>
+                <ul className="actions">
+                  <li><input type="submit" value="Send Message" /></li>
+                </ul>
+              </div>
+              <div className="4u 12u$(small)">
+                <ul className="labeled-icons">
+                  <li>
+                    <h3 className="icon fa-home"><span className="label">Address</span></h3>
+                    Ocean Shores,
+                    NSW, 2483,
+                    Australia
+                </li>
+                  <li>
+                    <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
+                    <a href="tel:+61401969190">+61 401 969 190</a>
+                  </li>
+                  <li>
+                    <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
+                    <a href="mailto:me@sandracolley.com.au">me@sandracolley.com.au</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
 
         </div>
 

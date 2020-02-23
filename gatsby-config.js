@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: "Sandra Colley",
     author: "Sandra Colley",
-    description: "I’m Sandra! I am a mother, doula, early childhood teacher, friend, partner and sister"
+    description: "I’m Sandra! I am a mother, doula, early childhood teacher, friend, partner and sister",
+    siteURL: 'https://sandracolley.com.au',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
