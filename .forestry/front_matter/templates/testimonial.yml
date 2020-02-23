@@ -25,6 +25,6 @@ fields:
   description: Hidden filed to identify testimonials
   default: testimonial
 pages:
+- src/testimonials/Amanda Aitchison.md
 - src/testimonials/Test Doula Testimonial.md
 - src/testimonials/Test Doula Testimonial2.md
-- src/testimonials/Test Doula Testimonial3.md
