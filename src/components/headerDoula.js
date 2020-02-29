@@ -7,14 +7,14 @@ import { Link } from 'gatsby'
 class Header extends React.Component {
   render() {
     return (
-      <header id="header">
+      <header id="header" className="header-doula">
         <div className="inner">
           <Link to="/" className="image avatar">
             <img src={avatar} alt="Face of Sandra Colley"/>
           </Link>
-          <h1><strong>I'm Doula.Sandra.</strong><br />
-          Doula. Early Childhood Teacher. <br />
-          Friend. Partner. Sister.</h1>
+          <h1><strong>I'm Doula.Sandra</strong><br />
+          As a birthworker I'm your personal,<br />
+          non medical birth support</h1>
         </div>
         <Footer />
       </header>

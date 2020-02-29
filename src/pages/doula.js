@@ -32,7 +32,7 @@ class Doula extends React.Component {
 
           <section id="intro">
 
-            <h1>Doula</h1>
+            <h1>Doula.Sandra</h1>
 
             <p className="lead">Becoming a birthworker has been my dream from a very young age. After giving birth myself the intensity of this dream grew more powerful as life went on. Over the years I gathered a broad knowledge as well as a wide range of personal professional experience and am now a certified doula.</p>
             
