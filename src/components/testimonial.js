@@ -3,10 +3,10 @@ import Helmet from 'react-helmet'
 import { graphql } from "gatsby"
 import Layout from '../components/layout'
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   const post = data.markdownRemark
   return (
-    <Layout>
+    <Layout location={location}>
       <Helmet>
         <title>{post.frontmatter.title}</title>
       </Helmet>

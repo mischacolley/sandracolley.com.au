@@ -1,19 +1,22 @@
 import React from 'react'
 import '../assets/scss/main.scss'
+import { Location } from '@reach/router'
 
 import Header from './Header'
+import HeaderDoula from './headerDoula'
 
-class Template extends React.Component {
-  render() {
-    const { children } = this.props
+const Layout = ({ children }) => {
 
-    return (
-      <div>
-        <Header />
-        {children}
-      </div>
-    )
-  }
+  return (
+    <>
+      <Location>
+        {({ location }) => {
+          return (location.pathname.split('/')[1] === "doula" ? <HeaderDoula /> : <Header />); 
+        }}
+      </Location>
+      {children}
+    </>
+  )
 }
 
-export default Template
+export default Layout
