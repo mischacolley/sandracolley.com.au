@@ -45,8 +45,9 @@ class Doula extends React.Component {
               {testimonials.map(({ node }) => {
                 return (
                   <article key={node.frontmatter.path}>
+                    <h3>{node.frontmatter.title}</h3>
                     <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                    <strong>{node.frontmatter.name}</strong>
+                    <Link to={node.frontmatter.path}>Read more</Link>
                   </article>
                 )
               })}
@@ -148,7 +149,6 @@ export const pageQuery = graphql`
           id
           excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             path
             title
           }

@@ -1,8 +1,8 @@
 ---
 tag:
 - doula
-path: phoenix-rogan
-name: Phoenix Rogan
+path: "/phoenix-rogan"
+title: Phoenix Rogan
 type: testimonial
 
 ---

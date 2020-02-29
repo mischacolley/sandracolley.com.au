@@ -1,8 +1,8 @@
 ---
 tag:
 - doula
-name: Alisha Williams
-path: alisha-williams
+title: Alisha Williams
+path: "/alisha-williams"
 type: testimonial
 
 ---

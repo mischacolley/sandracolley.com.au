@@ -1,8 +1,8 @@
 ---
-date: 2020-02-08T07:52:53Z
+path: "/test-hidden-filed"
 type: post
+date: 2019-06-04
 title: Test hidden filed
-path: test-hidden-field
 
 ---
 Testing the hidden field
