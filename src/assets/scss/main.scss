@@ -1510,3 +1510,10 @@
 	margin-left: 0.2em;
   font-size: 1.5rem;
 }
+
+.instgram-posts {
+	display: grid;
+	grid-gap: 0.5em 0;
+	grid-template-columns: repeat(3, 1fr);
+}
+    

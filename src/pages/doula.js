@@ -56,7 +56,7 @@ class Doula extends React.Component {
           </section>
 
           <section>
-            <ul className="latest-posts">
+            <ul className="instgram-posts">
               {instagram.map(({ node }) => {
                 return (
                   <li>
