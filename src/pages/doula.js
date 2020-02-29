@@ -38,6 +38,22 @@ class Doula extends React.Component {
             
           </section>
 
+          <section>
+
+            <h2>What i do?</h2>
+
+            <p>As a doula I am your personal, non medical birth support. Birth is a wonderfully and intense journey and if you can you should make use of as much support as possible. It can become vital to have a known, trusted, experienced person with you. I offer guidance and unbiased information on all topics around birth, pregnancy and the prenatal period.</p>
+
+            <p>I am experienced in accupressure, breathing/birthing techniques and other pain relief methods to ease the birth of your baby/ies. I can also provide you with nourishing home cooked meals, unlimited phone and messaging/email support and access to my resource library. If this sounds like the kind of birth support you're after, please contact me to schedule a complimentary first interview.</p>
+
+            <ul className="actions">
+              <li>
+                <Link className="button" to="/posts">Info Pack</Link>
+              </li>
+            </ul>
+
+          </section>
+
           <section id="testimonials">
             <h2>What my clients say</h2>
 
@@ -56,6 +72,15 @@ class Doula extends React.Component {
           </section>
 
           <section>
+            <h2>FAQs</h2>
+
+            <h3>Why do I need a Doula?</h3>
+
+            <p><a href="https://www.ncbi.nlm.nih.gov/m/pubmed/23076901/?fbclid=IwAR23D9YAVziONYEudiQR2LKvfZ4ZaCCk5P_FhxDM7JpZ7qazctxw1YsiHg8" target="_blank" rel="noopener noreferrer">Studies show</a> that in 95% of births doulas lead to a shorter labour, more spontaneous vaginal birth (lower chances of induction), less cesareans and instrumental births, fewer pain medication and epidural, less babies with a low 5min. Apgar score and overall more satisfaction with the birth experience.</p>
+
+          </section>
+
+          <section>
             <ul className="instgram-posts">
               {instagram.map(({ node }) => {
                 return (
@@ -69,34 +94,8 @@ class Doula extends React.Component {
             </ul>
           </section>
 
-          <section>
-
-            <h2>What i do?</h2>
-
-            <p>As a doula I am your personal, non medical birth support. Birth is a wonderfully and intense journey and if you can you should make use of as much support as possible. It can become vital to have a known, trusted, experienced person with you. I offer guidance and unbiased information on all topics around birth, pregnancy and the prenatal period.</p>
-            
-            <p>I am experienced in accupressure, breathing/birthing techniques and other pain relief methods to ease the birth of your baby/ies. I can also provide you with nourishing home cooked meals, unlimited phone and messaging/email support and access to my resource library. If this sounds like the kind of birth support you're after, please contact me to schedule a complimentary first interview.</p> 
-
-            <ul className="actions">
-              <li>
-                <Link className="button" to="/posts">Info Pack</Link>
-              </li>
-            </ul>
-
-          </section>
-
-          <section>
-            <h2>FAQs</h2>
-
-            <h3>Why do I need a Doula?</h3>
-
-            <p><a href="https://www.ncbi.nlm.nih.gov/m/pubmed/23076901/?fbclid=IwAR23D9YAVziONYEudiQR2LKvfZ4ZaCCk5P_FhxDM7JpZ7qazctxw1YsiHg8" target="_blank" rel="noopener noreferrer">Studies show</a> that in 95% of births doulas lead to a shorter labour, more spontaneous vaginal birth (lower chances of induction), less cesareans and instrumental births, fewer pain medication and epidural, less babies with a low 5min. Apgar score and overall more satisfaction with the birth experience.</p>
-
-          </section>
-
           <section id="three">
-            <h2 id="contact">Get In Touch</h2>
-            <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+            <h2 id="contact">I'd love to hear from you</h2>
             <div className="row">
               <div className="8u 12u$(small)">
                 <form method="post" action="#">
