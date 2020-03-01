@@ -13,6 +13,10 @@ fields:
   label: URL
   config:
     required: true
+- name: tag
+  type: tag_list
+  default: []
+  label: Tag
 - name: date
   type: datetime
   label: Date

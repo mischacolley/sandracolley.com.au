@@ -3,6 +3,8 @@ path: "/my-first-post"
 type: post
 date: 2019-05-04
 title: My first blog post
+tag:
+- doula
 
 ---
 This will be super cool if it works. Wow this really works!  
