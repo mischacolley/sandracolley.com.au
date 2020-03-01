@@ -9,7 +9,7 @@ class Header extends React.Component {
     return (
       <header id="header" className="header-doula">
         <div className="inner">
-          <Link to="/" className="image avatar">
+          <Link to="/doula" className="image avatar">
             <img src={avatar} alt="Face of Sandra Colley"/>
           </Link>
           <h1><strong>I'm Doula.Sandra</strong><br />
