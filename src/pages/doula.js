@@ -3,8 +3,6 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 
-import Img from "gatsby-image"
-
 import get from 'lodash/get'
 
 import { Link, graphql } from 'gatsby'
@@ -18,7 +16,6 @@ class Doula extends React.Component {
     const pageDescription = "As a doula I am your personal, non medical birth support servicing all areas in the Byron shire as well as Lennox Head, Lismore, Murwillumbah, Ballina, Tweed Heads & the Gold Coast."
 
     const testimonials = get(this, 'props.data.allMarkdownRemark.edges')
-    const instagram = get(this, 'props.data.allInstaNode.edges')
 
     return (
       <Layout>
