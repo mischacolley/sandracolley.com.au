@@ -35,7 +35,7 @@ class Homepage extends React.Component {
             <p>I live with my beautiful family near Byron Bay in the Northern Rivers region of NSW, Australia. Here I work raising my children and as a Birth Doula.</p>
 
             <ul className="actions">
-              <li><Link to="/doula" className="button">Hear about my work as Doula.Sandra</Link></li>
+              <li><Link to="/doula" className="button special">Hear about my work as Doula.Sandra</Link></li>
               <li><Link to="/about" className="button">Hear more about me, Sandra Colley</Link></li>
             </ul>
 

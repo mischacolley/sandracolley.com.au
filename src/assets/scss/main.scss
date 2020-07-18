@@ -88,6 +88,7 @@
 
 	p {
 		margin: 0 0 _size(element-margin) 0;
+		font-size: 1.2em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -103,7 +104,7 @@
 	}
 
 	h1 {
-		font-size: 2em;
+		font-size: 2.5em;
 		line-height: 1.5em;
 	}
 
@@ -449,6 +450,7 @@
 		border: 0;
 		display: inline-block;
 		position: relative;
+		max-width: 100%;
 
 		&:before {
 			@include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
@@ -503,6 +505,7 @@
 		img {
 			border-radius: _size(border-radius);
 			display: block;
+			max-width: 100%;
 		}
 
 		&.left {
@@ -569,6 +572,7 @@
 
 		li {
 			padding-left: 0.5em;
+			font-size: 1.3em;
 		}
 
 		&.alt {
@@ -800,8 +804,9 @@
 		@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
 		background-color: transparent;
 		border-radius: _size(border-radius);
-		border: solid 3px _palette(border);
-		color: _palette(fg-bold) !important;
+		// border: solid 3px _palette(border);
+		border: solid 3px _palette(accent1, bg);
+		color: _palette(accent1, bg) !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: _font(weight-bold);
@@ -816,7 +821,6 @@
 
 		&:hover {
 			border-color: _palette(accent1, bg);
-			color: _palette(accent1, bg) !important;
 		}
 
 		&:active {
@@ -1536,6 +1540,12 @@
     padding: 0.25rem;
     margin: 0.25rem;
     border: none;
+	}
+}
+
+.actions {
+	li {
+		font-size: 0.9em;
 	}
 }
     

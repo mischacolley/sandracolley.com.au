@@ -6,8 +6,8 @@ class Footer extends React.Component {
             <div id="footer">
                 <div className="inner">
                     <ul className="icons">
-                        <li><a href="tel:+61401969190" className="icon fa-phone"><span className="label-phone">+61 401 969 190</span></a></li>
-                        <li><a href="mailto:me@sandracolley.com.au" className="icon fa-envelope-o"><span className="label">Email</span></a></li>
+                        <li><a href="tel:+61401969190"><span className="label-phone">+61 401 969 190</span></a></li>
+                        <li><a href="mailto:me@sandracolley.com.au" ><span className="label">me@sandracolley.com.au</span></a></li>
                     </ul>
                 </div>
             </div>

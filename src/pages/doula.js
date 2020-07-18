@@ -9,6 +9,8 @@ import get from 'lodash/get'
 
 import { Link, graphql } from 'gatsby'
 
+import doula_deck from '../assets/images/doula_deck.jpg'
+
 class Doula extends React.Component {
   render() {
 
@@ -34,15 +36,17 @@ class Doula extends React.Component {
 
             <h1>Doula.Sandra</h1>
 
-            <p className="lead">I am a loving, emaphic and passionate doula.</p>
+            <p className="lead">I am a loving, emapathic and passionate doula.</p>
 
             <p>I have mastered the art of following my intuition to put my knowledge into practice so you can get the best possible support in your birth journey.</p> 
 
-            <p>My clients describe me as the calm in the storm, being both nurturing and grounding while staying focused on what lies ahead. I have a great sense of consistency, clarity and organisation.</p>
+            <p><a href="#testimonials">My clients describe me as</a> the calm in the storm, being both nurturing and grounding while staying focused on what lies ahead. I have a great sense of consistency, clarity and organisation.</p>
 
             <p>You, your family and your birth experience are unique and it’s my practice to support your individual choices in a loving and respectful way. It is vital that you feel safe, loved and nurtured as you embark on the journey to birth your baby/s. I am here to support you and advocate for your needs with all my capacities.</p>
 
             <p>I live with my beautiful family near Byron Bay in the Northern Rivers region of NSW, Australia. I service all areas in the Byron shire as well as Lennox Head, Lismore, Muhrwullumbah, Ballina, Tweed Heads and the Gold Coast.</p>
+
+            <img src={doula_deck} className="image" alt="Labouring on Deck" />
   
           </section>
 

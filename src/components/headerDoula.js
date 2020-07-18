@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Footer from './Footer'
+// import Footer from './Footer'
 import avatar from '../assets/images/avatar_doula.png'
 import { Link } from 'gatsby'
 
@@ -23,10 +23,11 @@ class Header extends React.Component {
             <li><Link to="/doula#services" >Services</Link></li>
             <li><Link to="/doula#testimonials" >Testimonials</Link></li>
             <li><Link to="/doula#faqs" >FAQs</Link></li>
+            <li><Link to="/doula#contact" >Contact</Link></li>
           </ul>
         </nav>
 
-        <Footer />
+        {/* <Footer /> */}
       </header>
     )
   }
