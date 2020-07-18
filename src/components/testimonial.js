@@ -2,6 +2,7 @@ import React from "react"
 import Helmet from 'react-helmet'
 import { graphql } from "gatsby"
 import Layout from '../components/layout'
+import { Link } from 'gatsby'
 
 export default ({ data, location }) => {
   const post = data.markdownRemark
@@ -12,6 +13,12 @@ export default ({ data, location }) => {
       </Helmet>
 
       <div id="main">
+
+        <nav>
+          <ul>
+            <li><Link to="/doula" >Back to Doula.Sandra</Link></li>
+          </ul>
+        </nav>
 
         <article className="blog-post-container">
           <div className="blog-post">

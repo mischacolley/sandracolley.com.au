@@ -16,6 +16,16 @@ class Header extends React.Component {
           As a birthworker I'm your personal,<br />
           non medical birth support</h1>
         </div>
+
+        <nav className="nav">
+          <ul>
+            <li><Link to="/doula#about" >About</Link></li>
+            <li><Link to="/doula#services" >Services</Link></li>
+            <li><Link to="/doula#testimonials" >Testimonials</Link></li>
+            <li><Link to="/doula#faqs" >FAQs</Link></li>
+          </ul>
+        </nav>
+
         <Footer />
       </header>
     )

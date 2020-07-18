@@ -30,15 +30,23 @@ class Doula extends React.Component {
 
         <div id="main">
 
-          <section id="intro">
+          <section id="about">
 
             <h1>Doula.Sandra</h1>
 
-            <p className="lead">Becoming a birthworker has been my dream from a very young age. After giving birth myself the intensity of this dream grew more powerful as life went on. Over the years I gathered a broad knowledge as well as a wide range of personal professional experience and am now a certified doula.</p>
-            
+            <p className="lead">I am a loving, emaphic and passionate doula.</p>
+
+            <p>I have mastered the art of following my intuition to put my knowledge into practice so you can get the best possible support in your birth journey.</p> 
+
+            <p>My clients describe me as the calm in the storm, being both nurturing and grounding while staying focused on what lies ahead. I have a great sense of consistency, clarity and organisation.</p>
+
+            <p>You, your family and your birth experience are unique and it’s my practice to support your individual choices in a loving and respectful way. It is vital that you feel safe, loved and nurtured as you embark on the journey to birth your baby/s. I am here to support you and advocate for your needs with all my capacities.</p>
+
+            <p>I live with my beautiful family near Byron Bay in the Northern Rivers region of NSW, Australia. I service all areas in the Byron shire as well as Lennox Head, Lismore, Muhrwullumbah, Ballina, Tweed Heads and the Gold Coast.</p>
+  
           </section>
 
-          <section>
+          {/* <section>
 
             <h2>What i do?</h2>
 
@@ -46,11 +54,35 @@ class Doula extends React.Component {
 
             <p>I am experienced in accupressure, breathing/birthing techniques and other pain relief methods to ease the birth of your baby/ies. I can also provide you with nourishing home cooked meals, unlimited phone and messaging/email support and access to my resource library. If this sounds like the kind of birth support you're after, please contact me to schedule a complimentary first interview.</p>
 
-            <ul className="actions">
-              <li>
-                <Link className="button" to="/posts">Info Pack</Link>
-              </li>
+          </section> */}
+
+          <section id="services">
+
+            <h2>What I offer</h2>
+
+            <p>As a doula I am your personal, non medical birth support.</p>
+
+            <p>I offer individualised educational, physical and emotional support during your pregnancy, birth and postnatal period.</p>
+
+            <p>Some days this might be a chat and a laugh or cry and other it might be practical or physical support. Some things you may choose to be part of your individual birth support are:</p>
+
+            <ul>
+              <li>Support of  your knowledge on how to safely birth your baby (i.e. personal birth prep. for you and your team)</li>
+              <li>Unbiased support in making informed decisions through pregnancy, birth and early parenthood</li>
+              <li>Clear picture of the choices you make and creating a unique Birth Plan</li>
+              <li>Emotional support (overcoming fear, anxiety and embracing joy)</li>
+              <li>Physical support (acupressure, movement, positioning for an optimal birth)</li>
+              <li>Passing on my professional knowledge as a birth keeper as well as unlimited access to my birth library</li>
+              <li>Alternative/natural pain relief methods</li>
+              <li>Support in creating the perfect birthing environment, catered to your needs</li>
+              <li>Nurishment (wholesome home cooked meals)</li>
+              <li>Commitment to you and your birth</li>
+              <li>Advocacy</li>
             </ul>
+
+            <p>I'm prepared to stand up for you to support you in your choice and advocate for you. Ultimately support you in creating the birth you and your baby need for a bright future.</p>
+
+            <p></p>
 
           </section>
 
@@ -71,7 +103,7 @@ class Doula extends React.Component {
 
           </section>
 
-          <section>
+          <section id="faqs">
             <h2>FAQs</h2>
 
             <h3>Why do I need a Doula?</h3>
@@ -80,22 +112,8 @@ class Doula extends React.Component {
 
           </section>
 
-          <section>
-            <ul className="instgram-posts">
-              {instagram.map(({ node }) => {
-                return (
-                  <li>
-                    <a href={"https://www.instagram.com/p/" + node.id} target="_blank" rel="noopener noreferrer">
-                      <Img fluid={node.localFile.childImageSharp.fluid} />
-                    </a>
-                  </li>
-                )
-              })}
-            </ul>
-          </section>
-
-          <section id="three">
-            <h2 id="contact">I'd love to hear from you</h2>
+          <section id="contact">
+            <h2>I'd love to hear from you</h2>
             <div className="row">
               <div className="8u 12u$(small)">
                 <form method="post" action="#">
@@ -130,6 +148,19 @@ class Doula extends React.Component {
             </div>
           </section>
 
+          <section>
+            <ul className="instgram-posts">
+              {instagram.map(({ node }) => {
+                return (
+                  <li>
+                    <a href={"https://www.instagram.com/p/" + node.id} target="_blank" rel="noopener noreferrer">
+                      <Img fluid={node.localFile.childImageSharp.fluid} />
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
+          </section>
 
         </div>
 

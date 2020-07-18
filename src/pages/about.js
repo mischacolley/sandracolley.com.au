@@ -27,8 +27,16 @@ class About extends React.Component {
 
           <section id="one">
 
-            <h1>About</h1>
-            
+            <h1>About me, Sandra Colley</h1>
+
+            <p>I am a loving and passionate mother, doula, early childhood and special needs teacher, friend, partner, sister, daughter and involved member of my community.</p>
+
+            <p>I am the mother of two beautiful children and have a background in early childhood and special needs care/education. </p>
+
+            <p>Since becoming a mama and being absolutely fascinated, humbled and empowered by the journey of conception, pregnancy, birth and early parenthood I chose to follow my dream and became a certified birth doula (being in service of the birthing woman).</p>
+
+            <p>I live with my beautiful family near Byron Bay in the Northern Rivers region of NSW, Australia.</p>
+             
           </section>
 
         </div>

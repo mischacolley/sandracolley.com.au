@@ -27,22 +27,22 @@ class Homepage extends React.Component {
 
           <section id="one">
             <header className="major">
-              <h2>I’m Sandra! I am a mother, doula, early childhood teacher, friend, partner and sister. </h2>
+              <h2>I’m Sandra!</h2>
             </header>
-            <p>I live with my beautiful family in the Byron Shire of Northern NSW, Australia.</p>
+            
+            <p>I am a loving and passionate mother, doula, early childhood and special needs teacher, friend, partner, sister, daughter and involved member of my community.</p>
 
-            <p>I am a devoted mum of two beautiful children who taught me how to truly love and be loved unconditionally. After having a fulfilling career as an early childhood teacher I have finally devoted myself to my dream of being a Doula.</p>
+            <p>I live with my beautiful family near Byron Bay in the Northern Rivers region of NSW, Australia. Here I work raising my children and as a Birth Doula.</p>
 
             <ul className="actions">
-              <li><Link to="/doula" className="button">Hear about Doula.Sandra</Link></li>
+              <li><Link to="/doula" className="button">Hear about my work as Doula.Sandra</Link></li>
+              <li><Link to="/about" className="button">Hear more about me, Sandra Colley</Link></li>
             </ul>
-
-            <p>Cooking ... craft. Unschooling.</p>
 
           </section>
 
           <section >
-            <h2>Latest Posts</h2>
+            <h2>Read my latest posts</h2>
 
             {posts.map(({ node }) => {
               const title = get(node, 'frontmatter.title') || node.frontmatter.path
