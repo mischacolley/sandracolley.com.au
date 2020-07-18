@@ -152,20 +152,6 @@ class Doula extends React.Component {
             </div>
           </section>
 
-          <section>
-            <ul className="instgram-posts">
-              {instagram.map(({ node }) => {
-                return (
-                  <li>
-                    <a href={"https://www.instagram.com/p/" + node.id} target="_blank" rel="noopener noreferrer">
-                      <Img fluid={node.localFile.childImageSharp.fluid} />
-                    </a>
-                  </li>
-                )
-              })}
-            </ul>
-          </section>
-
         </div>
 
       </Layout>
@@ -185,40 +171,6 @@ export const pageQuery = graphql`
           frontmatter {
             path
             title
-          }
-        }
-      }
-    }
-    allInstaNode(
-      sort: { fields: timestamp, order: DESC }
-      limit: 6
-      ) {
-      edges {
-        node {
-          id
-          likes
-          comments
-          mediaType
-          preview
-          original
-          timestamp
-          caption
-          localFile {
-            childImageSharp {
-              fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
-            }
-          }
-          # Only available with the public api scraper
-          thumbnails {
-            src
-            config_width
-            config_height
-          }
-          dimensions {
-            height
-            width
           }
         }
       }
