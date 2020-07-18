@@ -907,7 +907,7 @@
 		@include vendor('justify-content', 'space-between');
 		background-color:		_palette(accent2, bg);
 		background-attachment:	scroll,								fixed;
-		background-image: url('./bg.jpg');
+		background-image: url('../images/bg.jpg');
 		background-position:	top left,							top left;
 		background-repeat:		repeat,								no-repeat;
 		background-size:		auto,								auto 100%;
@@ -952,7 +952,7 @@
 	}
 
 	#header.header-doula {
-		background-image: url('./bg_doula.jpg');
+		background-image: url('../images/bg_doula.jpg');
 	}
 
 /* Footer */
