@@ -35,5 +35,3 @@ fields:
   label: Type
   description: Hidden filed to identify posts
   default: post
-pages:
-- src/posts/this-is-my-second-post.md
