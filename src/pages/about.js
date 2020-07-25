@@ -3,10 +3,6 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 
-// import Img from "gatsby-image"
-
-// import { Link, graphql } from 'gatsby'
-
 class About extends React.Component {
   render() {
 
