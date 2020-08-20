@@ -7,9 +7,11 @@ class Header extends React.Component {
     return (
       <header id="header">
         <div className="inner">
-          <h1><strong>I'm Sandra.</strong> Mother.<br />
-          Doula. Early Childhood Teacher. <br />
-          Friend. Partner. Sister.</h1>
+          <h1><strong>I'm Sandra.</strong><br />
+          Mother. Birth Doula. <br />
+          Early Childhood & <br />
+          Special Needs Teacher.<br />
+          Friend. Partner. Sister. Daughter.</h1>
         </div>
         <Footer />
       </header>

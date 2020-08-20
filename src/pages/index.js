@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 
-// import Img from "gatsby-image"
 import get from 'lodash/get'
 
 import { Link, graphql } from 'gatsby'
@@ -27,12 +26,12 @@ class Homepage extends React.Component {
 
           <section id="one">
             <header className="major">
-              <h2>I’m Sandra!</h2>
+              <h2>I’m Sandra Colley!</h2>
             </header>
             
-            <p>I am a loving and passionate mother, doula, early childhood and special needs teacher, friend, partner, sister, daughter and involved member of my community.</p>
+            <p>I am a loving and passionate mother, birth doula, early childhood and special needs teacher, friend, <a href="https://mischacolley.com.au" target="_blank">partner</a>, sister, daughter and involved member of my community.</p>
 
-            <p>I live with my beautiful family near Byron Bay in the Northern Rivers region of NSW, Australia. Bundjalung and Yugambeh country. Here I work raising my children, as a Birth Doula and as a carer of people in my community.</p>
+            <p>I live with my beautiful family near Byron Bay in the Northern Rivers region of NSW, Australia. Bundjalung and Yugambeh country. Here I work raising my children, as a Birth Doula and as a carer of both big and little people in my community.</p>
 
             <ul className="actions">
               <li><Link to="/doula" className="button special">Hear about my work as Doula.Sandra</Link></li>
