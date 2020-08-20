@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
+import { Link } from 'gatsby'
 
 class About extends React.Component {
   render() {
@@ -34,6 +35,8 @@ class About extends React.Component {
             <p>I live with my beautiful family near Byron Bay in the Northern Rivers region of NSW, Australia. Bundjalung and Yugambeh country. Here I work raising my children, as a Birth Doula and as a carer of both big and little people in my community.</p>
              
           </section>
+
+          <Link to="/" className="button">Home</Link>
 
         </div>
 

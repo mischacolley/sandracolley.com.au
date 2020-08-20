@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import PostLink from "../components/PostLink"
 import Helmet from 'react-helmet'
 
@@ -26,6 +26,8 @@ const Posts = ({
           <h1>Posts</h1>
           {Posts}
         </section>
+
+        <Link to="/" className="button">Home</Link>
 
       </div>
 
