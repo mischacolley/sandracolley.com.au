@@ -7,12 +7,13 @@ import get from 'lodash/get'
 
 import { Link, graphql } from 'gatsby'
 
+import socialShare from '../assets/images/social_share/sandra.png'
+
 class Homepage extends React.Component {
   render() {
 
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(this, 'props.data.site.siteMetadata.description')
-    const socialShare = get(this, 'props.data.site.siteMetadata.image')
 
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
