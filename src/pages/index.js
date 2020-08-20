@@ -12,6 +12,7 @@ class Homepage extends React.Component {
 
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(this, 'props.data.site.siteMetadata.description')
+    const socialShare = get(this, 'props.data.site.siteMetadata.image')
 
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
@@ -20,6 +21,17 @@ class Homepage extends React.Component {
         <Helmet>
           <title>{siteTitle}</title>
           <meta name="description" content={siteDescription} />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content={siteTitle} />
+          <meta property="og:description" content={siteDescription} />
+          <meta property="og:image" content={socialShare} />
+          <meta name="twitter:image" content={socialShare} />
+          <meta property="og:image:width" content="512" />
+          <meta property="og:image:height" content="512" />
+          <meta property="twitter:title" content={siteTitle} />
+          <meta property="twitter:description" content={siteDescription} />
+          <meta name="twitter:card" content="summary_large_image" />
+
         </Helmet>
 
         <div id="main">

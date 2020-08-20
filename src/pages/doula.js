@@ -8,6 +8,7 @@ import get from 'lodash/get'
 import { Link, graphql } from 'gatsby'
 
 import doula_deck from '../assets/images/doula_deck.jpg'
+import socialShare from '../assets/images/social_share/doula_sandra.png'
 
 class Doula extends React.Component {
   render() {
@@ -21,10 +22,17 @@ class Doula extends React.Component {
       <Layout>
         <Helmet>
           <title>{pageTitle}</title>
-          <meta property="og:title" content={pageTitle} />
           <meta name="description" content={pageDescription} />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content={pageTitle} />
           <meta property="og:description" content={pageDescription} />
-          {/* <meta property="og:image" content={ogImg} /> */}
+          <meta property="og:image" content={socialShare} />
+          <meta name="twitter:image" content={socialShare} />
+          <meta property="og:image:width" content="512" />
+          <meta property="og:image:height" content="512" />
+          <meta property="twitter:title" content={pageTitle} />
+          <meta property="twitter:description" content={pageDescription} />
+          <meta name="twitter:card" content="summary_large_image" />
         </Helmet>
 
         <div id="main">

@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "Sandra Colley",
+    title: "Sandra Colley | Birth Doula, Early Childhood & Special Needs Teacher",
     author: "Sandra Colley",
-    description: "I’m Sandra! I am a mother, doula, early childhood teacher, friend, partner and sister",
+    description: "I am a loving & passionate mother, birth doula, early childhood & special needs teacher, friend, partner, sister, daughter & involved member of my community.",
     siteURL: 'https://sandracolley.com.au',
+    image: "/images/social_share/sandra.png",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
