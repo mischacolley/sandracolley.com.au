@@ -907,7 +907,8 @@
 		background-attachment:	scroll,								fixed;
 		background-image: url('../images/bg.jpg');
 		background-repeat: no-repeat;
-    background-size: cover;
+		background-size: cover;
+		background-position: center;
 		color: _palette(accent2, fg);
 		height: 100%;
 		left: 0;
@@ -924,7 +925,7 @@
 
 		> .inner {
 			@include vendor('flex-grow', '1');
-			margin: 0 0 ($size-header-pad * 0.5) 0;
+			margin: 4em 0 ($size-header-pad * 0.5) 0;
 		}
 
 		strong, b {
@@ -1195,7 +1196,7 @@
 
 		#header {
 			background-attachment:	scroll;
-			background-size:		auto, cover;
+			background-size: cover;
 		}
 
 		.poptrox-popup {
@@ -1297,8 +1298,8 @@
 
 			#header {
 				background-attachment:	scroll;
-				background-position:	top left,	center center;
-				background-size:		auto,		cover;
+				background-position: center;
+				background-size: cover;
 				left: auto;
 				padding: ($size-header-pad * 1.5) $size-header-pad;
 				position: relative;
