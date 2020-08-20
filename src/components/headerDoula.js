@@ -17,7 +17,7 @@ class Header extends React.Component {
           non medical birth support</h1>
         </div>
 
-        <nav className="nav">
+        <nav className="nav navDoula">
           <ul>
             <li><Link to="/doula#about" >About</Link></li>
             <li><Link to="/doula#services" >Services</Link></li>
