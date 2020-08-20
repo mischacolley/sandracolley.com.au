@@ -17,7 +17,7 @@
 
 // Font.
 	$font: (
-		family:				(monospace, sans-serif),
+		family:				(-apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif),
 		family-fixed:		('Courier New', monospace),
 		weight:				400,
 		weight-bold:		400
@@ -35,7 +35,7 @@
 		border2-bg:			#e7e7e7,
 
 		accent1: (
-			bg:				#5d5cc3,
+			bg:				#EF8A34,
 			fg:				mix(#5d5cc3, #ffffff, 25%),
 			fg-bold:		#ffffff,
 			fg-light:		mix(#5d5cc3, #ffffff, 40%),
