@@ -90,13 +90,13 @@ class Doula extends React.Component {
           <section id="testimonials">
             <h2>What my clients say</h2>
 
-            <ul>
+            <ul className="clientList">
               {testimonials.map(({ node }) => {
                 return (
                   <article key={node.frontmatter.path}>
                     <h3>{node.frontmatter.title}</h3>
                     <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                    <Link to={node.frontmatter.path}>Read more</Link>
+                    <Link to={node.frontmatter.path} className="button">Read more</Link>
                   </article>
                 )
               })}
