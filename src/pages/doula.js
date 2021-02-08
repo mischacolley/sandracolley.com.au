@@ -13,7 +13,7 @@ import socialShare from '../assets/images/social_share/doula_sandra.png'
 class Doula extends React.Component {
   render() {
 
-    const pageTitle = "Doula.Sandra - Birthworker for your pregnancy, birth & postpartum journey"
+    const pageTitle = "Doula Sandra - Birthworker for your pregnancy, birth & postpartum journey"
     const pageDescription = "As a birth doula I am your personal, non medical birth support servicing all areas in the Byron shire as well as Lennox Head, Lismore, Murwillumbah, Ballina, Tweed Heads & the Gold Coast."
 
     const testimonials = get(this, 'props.data.allMarkdownRemark.edges')
@@ -39,15 +39,15 @@ class Doula extends React.Component {
 
           <section id="about">
 
-            <h1>Doula.Sandra</h1>
+            <h1>Doula Sandra</h1>
 
-            <p className="lead">I am a loving, emapathic and passionate birth doula.</p>
+            <p className="lead">I am a nurturing, experienced and passionate birth doula.</p>
 
-            <p>I have mastered the art of following my intuition to put my knowledge into practice so you can get the best possible support in your birth journey.</p> 
+            <p>Over the last few years of working as a doula I have come to the understanding how important it is for me to master  the art of following my intuition to put my knowledge into practice so you can get the best possible support in your birth journey.</p> 
 
-            <p><a href="#testimonials">My clients describe me as</a> the calm in the storm, being both nurturing and grounding while staying focused on what lies ahead. I have a great sense of consistency, clarity and organisation.</p>
+            <p><a href="#testimonials">My clients describe me as</a> the calm in the storm, being both nurturing and grounding while staying focused on what lies ahead. I have a great sense of clarity around pregnancy and birth and am extremely reliable.</p>
 
-            <p>You, your family and your birth experience are unique and it’s my practice to support your individual choices in a loving and respectful way. It is vital that you feel safe, loved and nurtured as you embark on the journey to birth your baby/s. I am here to support you and advocate for your needs with all my capacities.</p>
+            <p>You, your family and your birth experience are unique and it’s my practice to support your individual choices in a compassionate and respectful way. It is vital that you feel safe, loved and nurtured as you embark on the journey to birth your baby/s. I am committed  to support you and advocate for your needs with all my capacities.</p>
 
             <p>I live with my beautiful family near Byron Bay in the Northern Rivers region of NSW, Australia. Bundjalung and Yugambeh country. I service all areas in the Byron shire as well as Lennox Head, Lismore, Muhrwullumbah, Ballina, Tweed Heads and the Gold Coast.</p>
 
@@ -63,12 +63,12 @@ class Doula extends React.Component {
 
             <p>I offer individualised educational, physical and emotional support during your pregnancy, birth and postnatal period.</p>
 
-            <p>Some days this might be a chat and a laugh or cry and on another it might be practical or physical support. Some things you may choose to be part of your individual birth support include:</p>
+            <p>Some days this might be a chat and a laugh or cry and on another it’s  practical or physical support. Some things you may choose to be part of your individual birth support can include:</p>
 
             <ul>
-              <li>Support of  your knowledge on how to safely birth your baby (i.e. personal birth prep. for you and your team)</li>
+              <li>Supporting  your knowledge of how to safely birth your baby (i.e. personal birth prep. for you and your team)</li>
               <li>Unbiased support in making informed decisions through pregnancy, birth and early parenthood</li>
-              <li>Clear picture of the choices you make and creating a unique Birth Plan</li>
+              <li>Creating  your unique Birth Plan with a clear picture of the choices you can make</li>
               <li>Emotional support (overcoming fear, anxiety and embracing joy)</li>
               <li>Physical support (acupressure, movement, positioning for an optimal birth)</li>
               <li>Passing on my professional knowledge as a birth keeper as well as unlimited access to my birth library</li>
@@ -77,9 +77,8 @@ class Doula extends React.Component {
               <li>Nurishment (wholesome home cooked meals)</li>
               <li>Commitment to you and your birth</li>
               <li>Advocacy</li>
+              <li>I will ultimately support you in creating the birth you and your baby need for a bright future</li>
             </ul>
-
-            <p>I'm prepared to stand up for you to support you in your choice and advocate for you. Ultimately support you in creating the birth you and your baby need for a bright future.</p>
 
           </section>
 

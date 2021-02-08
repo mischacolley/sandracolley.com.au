@@ -47,7 +47,7 @@ class Homepage extends React.Component {
             <p>I live with my beautiful family near Byron Bay in the Northern Rivers region of NSW, Australia. Bundjalung and Yugambeh country. Here I work raising my children, as a Birth Doula and as a carer of both big and little people in my community.</p>
 
             <ul className="actions">
-              <li><Link to="/doula" className="button special">Hear about my work as Doula.Sandra</Link></li>
+              <li><a href="/doula" className="button special" target="_blank">Hear about my work as Doula Sandra</a></li>
               <li><Link to="/about" className="button">Hear more about me, Sandra Colley</Link></li>
             </ul>
 
