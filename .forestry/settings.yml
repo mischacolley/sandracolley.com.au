@@ -13,6 +13,10 @@ sections:
   - post
 - type: heading
   label: Doula Page
+- type: document
+  path: src/doula/about.md
+  label: About
+  match: "**/*"
 - type: directory
   path: src/faqs
   label: FAQs
