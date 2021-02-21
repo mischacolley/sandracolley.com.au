@@ -3,7 +3,7 @@ label: FAQs
 hide_body: false
 display_field: question
 fields:
-- name: question
+- name: title
   type: text
   config:
     required: false
@@ -12,5 +12,12 @@ fields:
   type: tag_list
   default: []
   label: Tag
+- name: type
+  type: text
+  config:
+    required: false
+  label: Type
+  hidden: true
+  default: faqs
 pages:
 - src/faqs/why-do-i-need-a-doula.md
