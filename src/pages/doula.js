@@ -16,7 +16,9 @@ class Doula extends React.Component {
     const pageTitle = "Doula Sandra - Birthworker for your pregnancy, birth & postpartum journey"
     const pageDescription = "As a birth doula I am your personal, non medical birth support servicing all areas in the Byron shire as well as Lennox Head, Lismore, Murwillumbah, Ballina, Tweed Heads & the Gold Coast."
 
-    const testimonials = get(this, 'props.data.allMarkdownRemark.edges')
+    const testimonials = get(this, 'props.data.testimonials.edges')
+
+    const faqs = get(this, 'props.data.faqs.edges')
 
     return (
       <Layout>
@@ -102,9 +104,19 @@ class Doula extends React.Component {
           <section id="faqs">
             <h2>FAQs</h2>
 
-            <h3>Why do I need a Doula?</h3>
-
-            <p><a href="https://www.ncbi.nlm.nih.gov/m/pubmed/23076901/?fbclid=IwAR23D9YAVziONYEudiQR2LKvfZ4ZaCCk5P_FhxDM7JpZ7qazctxw1YsiHg8" target="_blank" rel="noopener noreferrer">Studies show</a> that in 95% of births doulas lead to a shorter labour, more spontaneous vaginal birth (lower chances of induction), less cesareans and instrumental births, fewer pain medication and epidural, less babies with a low 5min. Apgar score and overall more satisfaction with the birth experience.</p>
+            <ul className="faqsList">
+              {faqs.map(({ node }) => {
+                return (
+                  <article key={node.frontmatter.id}>
+                    <h3>{node.frontmatter.title}</h3>
+                    <div
+                      className="faq-content"
+                      dangerouslySetInnerHTML={{ __html: node.html }}
+                    />
+                  </article>
+                )
+              })}
+            </ul>
 
           </section>
 
@@ -155,17 +167,37 @@ export default Doula
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {tag: {eq: "doula"}, type: {eq: "testimonial"}}}) {
+
+    testimonials: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: {frontmatter: {tag: {eq: "doula"}, type: {eq: "testimonial"}}}
+    ) {
       edges {
         node {
           id
           excerpt(pruneLength: 250)
           frontmatter {
+            title
             path
+          }
+        }
+      }
+    }
+
+    faqs: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: {frontmatter: {tag: {eq: "doula"}, type: {eq: "faqs"}}}
+    ) {
+      edges {
+        node {
+          id
+          html
+          frontmatter {
             title
           }
         }
       }
     }
+
   }
 `

@@ -34,6 +34,13 @@ module.exports = {
         path: `src/testimonials`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `faqs`,
+        path: `src/faqs`,
+      },
+    },
     `gatsby-transformer-remark`,
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
