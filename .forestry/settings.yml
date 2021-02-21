@@ -17,9 +17,8 @@ sections:
   path: src/doula/about.md
   label: About
 - type: document
-  path: src/doula/about.md
+  path: src/doula/services.md
   label: Services
-  match: "**/*"
 - type: directory
   path: src/faqs
   label: FAQs
