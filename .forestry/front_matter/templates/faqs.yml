@@ -8,5 +8,9 @@ fields:
   config:
     required: false
   label: Question
+- name: tag
+  type: tag_list
+  default: []
+  label: Tag
 pages:
 - src/faqs/why-do-i-need-a-doula.md
