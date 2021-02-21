@@ -1,6 +1,7 @@
 ---
 label: FAQs
 hide_body: false
+display_field: question
 fields:
 - name: question
   type: text
