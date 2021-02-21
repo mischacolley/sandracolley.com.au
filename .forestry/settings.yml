@@ -5,6 +5,15 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: directory
+  path: src/posts
+  label: Posts
+  create: documents
+  match: "**/*"
+  templates:
+  - post
+- type: heading
+  label: Doula Page
+- type: directory
   path: src/faqs
   label: FAQs
   create: documents
@@ -16,13 +25,6 @@ sections:
   label: Testimonials
   create: all
   match: "**/*"
-- type: directory
-  path: src/posts
-  label: Posts
-  create: documents
-  match: "**/*"
-  templates:
-  - post
 upload_dir: static/uploads
 public_path: "/static/uploads"
 front_matter_path: ".forestry/front_matter/templates"
