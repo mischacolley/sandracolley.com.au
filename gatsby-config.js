@@ -41,6 +41,20 @@ module.exports = {
         path: `src/faqs`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `doulaAbout`,
+        path: `src/doula`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `doulaServices`,
+        path: `src/doula`,
+      },
+    },
     `gatsby-transformer-remark`,
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',

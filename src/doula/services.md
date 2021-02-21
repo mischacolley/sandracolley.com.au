@@ -1,3 +1,10 @@
+---
+type: services
+
+---
+
+## What I offer
+
 As a birth doula I am your personal, non medical birth support.
 
 I offer individualised educational, physical and emotional support during your pregnancy, birth and postnatal period.
