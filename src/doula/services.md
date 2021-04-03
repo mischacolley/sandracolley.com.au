@@ -42,7 +42,8 @@ After this we can decide on a price/payment plan and I’ll be committed to your
 * Unbiased support in making informed decisions
 * Blessingway/ babyshower support
 
- **Birth support ($800)**
+**Birth support ($800)**
+
 * Physical and emotional support throughout the whole birth and the first few hours post birth (generally 8-24 hours)
 * On call 24/7 2 weeks prior your estimated due date and up until the birth of your baby/ies (unless discussed otherwise)
 * Option of a backup doula for the unlikely event of an emergency
@@ -55,7 +56,7 @@ After this we can decide on a price/payment plan and I’ll be committed to your
 * Access to pre approved network of postpartum practitioners (extra cost)
 * Postpartum support plan
 
-**Whole birth package $1250**  
+**Whole birth package $1250**
 
 Deluxe birth package available with more appointments, to really sink deep and give you more support during pregnancy and postpartum. This can include more nourishing meals, childcare, special needs care, emotional support, trauma management etc...
 
