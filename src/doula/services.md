@@ -22,3 +22,5 @@ Some days this might be a chat and a laugh or cry and on another it’s practica
 * Commitment to you and your birth
 * Advocacy
 * I will ultimately support you in creating the birth you and your baby need for a bright future
+
+## Pricing 
