@@ -22,7 +22,7 @@ My service includes:
 * Commitment to you and your birth
 * Advocacy
 
-  I will ultimately support you in creating the birth you and your baby need for a bright future
+I will ultimately support you in creating the birth you and your baby need for a bright future
 
 ## Pricing
 
@@ -42,7 +42,7 @@ After this we can decide on a price/payment plan and I’ll be committed to your
 * Unbiased support in making informed decisions
 * Blessingway/ babyshower support
 
-  **Birth support ($800)**
+ **Birth support ($800)**
 * Physical and emotional support throughout the whole birth and the first few hours post birth (generally 8-24 hours)
 * On call 24/7 2 weeks prior your estimated due date and up until the birth of your baby/ies (unless discussed otherwise)
 * Option of a backup doula for the unlikely event of an emergency
@@ -55,14 +55,12 @@ After this we can decide on a price/payment plan and I’ll be committed to your
 * Access to pre approved network of postpartum practitioners (extra cost)
 * Postpartum support plan
 
-**Whole birth package $1250**
+**Whole birth package $1250**  
 
-  
 Deluxe birth package available with more appointments, to really sink deep and give you more support during pregnancy and postpartum. This can include more nourishing meals, childcare, special needs care, emotional support, trauma management etc...
 
 Giving birth is a life changing experience, an event you will remember for the rest of your life. Something to consider in relation to this may be the importance of the birth of your child and how much in relation you’d pay for your wedding, holidays, a website and any other business related expenses.
 
-  
 Birth is an incredibly important and life changing experience and I’d love to support you regardless of your financial situation. Keeping in mind that it also needs to be sustainable for me and my family.
 
 Living in this ever changing, evolving beautiful world of ours I’d like to suggest something that is quite new to me. Nevertheless part of what my ideal world looks like.
