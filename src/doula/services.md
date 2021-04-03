@@ -11,7 +11,7 @@ I offer individualised educational, physical and emotional support during your p
 Some days this might be a chat and a laugh or cry and on another it’s practical or physical support. Some things you may choose to be part of your individual birth support can include:
 
 * Supporting your knowledge of how to safely birth your baby (i.e. personal birth prep. for you and your team)
-* Unbiased support in making informed decisions through pregnancy, birth and early parenthood
+* Unbiased support in making informed decisions through pregnancy, birth and early parenthood.
 * Creating your unique Birth Plan with a clear picture of the choices you can make
 * Emotional support (overcoming fear, anxiety and embracing joy)
 * Physical support (acupressure, movement, positioning for an optimal birth)
