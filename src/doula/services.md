@@ -32,7 +32,7 @@ Birth support packages may vary, depending on your personal needs and the choice
 
 After this we can decide on a price/payment plan and I’ll be committed to your non medical birthing needs.
 
-**Pregnancy support and birth preparation ($350 - about 8-10 hours)**
+**Pregnancy support and birth preparation ($350 - about 6-9 hours)**
 
 * Creating your personal birth plan
 * Family centered personal birth prep, for example: breathing techniques, meditation, acupressure, working with fear
