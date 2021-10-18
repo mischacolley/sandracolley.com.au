@@ -20,4 +20,5 @@ fields:
   hidden: true
   default: faqs
 pages:
+- src/faqs/what-about-my-partner-father-of-the-baby-won-t-they-feel-left-out.md
 - src/faqs/why-do-i-need-a-doula.md
