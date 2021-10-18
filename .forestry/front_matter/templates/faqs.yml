@@ -21,4 +21,5 @@ fields:
   default: faqs
 pages:
 - src/faqs/what-about-my-partner-father-of-the-baby-won-t-they-feel-left-out.md
+- src/faqs/what-if-i-want-a-homebirth-hospital-birth.md
 - src/faqs/why-do-i-need-a-doula.md
