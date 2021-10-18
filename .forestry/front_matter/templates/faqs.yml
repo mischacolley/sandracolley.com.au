@@ -20,6 +20,7 @@ fields:
   hidden: true
   default: faqs
 pages:
+- src/faqs/What's the difference between a doula and a midwife?.md
 - src/faqs/do-you-support-lgbtq.md
 - src/faqs/what-about-my-partner-father-of-the-baby-won-t-they-feel-left-out.md
 - src/faqs/what-if-i-can-t-afford-a-doula.md
