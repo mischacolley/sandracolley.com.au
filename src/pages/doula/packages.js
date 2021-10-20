@@ -1,15 +1,15 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import Layout from '../components/layout'
-import FooterDoula from '../components/footerDoula'
+import Layout from '../../components/layout'
+import FooterDoula from '../../components/footerDoula'
 
 import get from 'lodash/get'
 
 import { Link, graphql } from 'gatsby'
 
-import wild_ocean_warrioress from '../assets/images/wild_ocean_warrioress.jpg'
-import socialShare from '../assets/images/social_share/doula_sandra.png'
+import doula_deck from '../../assets/images/doula_deck.jpg'
+import socialShare from '../../assets/images/social_share/doula_sandra.png'
 
 class Doula extends React.Component {
   render() {
@@ -23,7 +23,7 @@ class Doula extends React.Component {
 
     const doulaAbout = get(this, 'props.data.doulaAbout.edges')
 
-    const doulaServices = get(this, 'props.data.doulaServices.edges')
+    const doulaPackages = get(this, 'props.data.doulaPackages.edges')
 
     return (
       <Layout>
@@ -44,61 +44,20 @@ class Doula extends React.Component {
 
         <div id="main">
 
-          <img src={wild_ocean_warrioress} className="image" alt="Wild Ocean Warrioress" />
+          <img src={doula_deck} className="image" alt="Labouring on Deck" />
 
-          <section id="about">
+          <section id="packages">
 
-            {doulaAbout.map(({ node }) => {
+            {doulaPackages.map(({ node }) => {
               return (
                 <div dangerouslySetInnerHTML={{ __html: node.html }} />
               )
             })}
 
-            <ul className="actions">
-              <li><Link to="/doula/packages" className="button special">View my Packages</Link></li>
-              <li><Link to="/doula#testimonials" className="button">See some Testimonials</Link></li>
-            </ul>
-
           </section>
 
-          <section id="testimonials">
-            <h2>What my clients say</h2>
-
-            <ul className="clientList">
-              {testimonials.map(({ node }) => {
-                return (
-                  <article key={node.frontmatter.path}>
-                    <h3>{node.frontmatter.title}</h3>
-                    <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                    <Link to={node.frontmatter.path} className="button">Read more</Link>
-                  </article>
-                )
-              })}
-            </ul>
-
-          </section>
-
-          <section id="faqs">
-            <h2>FAQs</h2>
-
-            <ul className="faqsList">
-              {faqs.map(({ node }) => {
-                return (
-                  <article key={node.frontmatter.id}>
-                    <h3>{node.frontmatter.title}</h3>
-                    <div
-                      className="faq-content"
-                      dangerouslySetInnerHTML={{ __html: node.html }}
-                    />
-                  </article>
-                )
-              })}
-            </ul>
-
-          </section>
-          
           <FooterDoula />
- 
+
         </div>
 
       </Layout>
@@ -154,9 +113,9 @@ export const pageQuery = graphql`
       }
     }
 
-    doulaServices: allMarkdownRemark(
+    doulaPackages: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: {frontmatter: {type: {eq: "services"}}}
+      filter: {frontmatter: {type: {eq: "packages"}}}
     ) {
       edges {
         node {
