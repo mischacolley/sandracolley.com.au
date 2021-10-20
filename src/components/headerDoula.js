@@ -12,7 +12,7 @@ class Header extends React.Component {
           <Link to="/doula" className="image avatar">
             <img src={avatar} alt="Face of Sandra Colley"/>
           </Link>
-          <h1><strong>I'm Doula Sandra</strong><br />
+          <h1><strong class="block">I'm Doula Sandra</strong><br />
           As a birthworker I'm your personal,<br />
           non medical birth support</h1>
         </div>
@@ -20,7 +20,7 @@ class Header extends React.Component {
         <nav className="nav navDoula">
           <ul>
             <li><Link to="/doula#about" >About</Link></li>
-            <li><Link to="/doula#services" >Services</Link></li>
+            <li><Link to="/doula/packages" >Packages</Link></li>
             <li><Link to="/doula#testimonials" >Testimonials</Link></li>
             <li><Link to="/doula#faqs" >FAQs</Link></li>
             <li><Link to="/doula#contact" >Contact</Link></li>
